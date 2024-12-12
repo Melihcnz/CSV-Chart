@@ -32,11 +32,7 @@ const CustomBarChart = ({ data, header, averages }) => (
           offset: 10,
         }}
       />
-      <Tooltip
-        cursor={{ strokeDasharray: "3 3" }}
-        wrapperStyle={{ zIndex: 1000 }}
-        position={{ x: "auto", y: "auto" }}
-      />
+      <Tooltip />
       <Legend verticalAlign="top" height={36} />
       <Bar dataKey={header} fill="#82ca9d" />
     </BarChart>
