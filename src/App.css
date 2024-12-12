@@ -36,7 +36,6 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: relative;
 }
 
 .chart-box .recharts-wrapper {
@@ -45,10 +44,8 @@ html, body {
   min-height: 220px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Align-items ekledik */
   margin: 5px 0;
-  position: relative;
-  overflow: visible;
 }
 
 .chart-box h3 {
@@ -127,11 +124,4 @@ html, body {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-}
-
-/* Tooltip pozisyonlaması için yeni stil */
-.recharts-tooltip-wrapper {
-  position: fixed !important;
-  pointer-events: none;
-  z-index: 1000;
 }
